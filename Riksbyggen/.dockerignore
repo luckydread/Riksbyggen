@@ -1,0 +1,32 @@
+# Ignore build output
+bin/
+obj/
+dist/
+build/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore Dockerfiles and compose files outside the build context
+Dockerfile.*
+docker-compose*.yml
+
+# Ignore local environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log

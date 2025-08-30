@@ -1,0 +1,17 @@
+services:
+  riksbyggen-server-app:
+    build:
+      context: ./Riksbyggen
+      dockerfile: Dockerfile
+    container_name: riksbyggen-server-app
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      DB_HOST: 138.68.79.101 # replace with your droplet's IP or hostname
+      DB_NAME: RiksbyggenDb
+      DB_USER: sa
+      DB_SA_PASSWORD: Mhondoro!6
+      DOTNET_RUNNING_IN_CONTAINER: true
+    ports:
+      - "5000:80" # Host port 5000 → Container port 80
+    command: >
+      sh -c " dotnet Riksbyggen.dll --urls http://0.0.0.0:80 "

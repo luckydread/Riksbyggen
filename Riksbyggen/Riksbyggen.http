@@ -1,0 +1,6 @@
+@Riksbyggen_HostAddress = http://localhost:5282
+
+GET {{Riksbyggen_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

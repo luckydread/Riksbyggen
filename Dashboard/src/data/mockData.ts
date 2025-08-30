@@ -1,0 +1,91 @@
+import { Company, Apartment } from "@/types";
+
+export const mockCompanies: Company[] = [
+  {
+    id: "1",
+    name: "Stockholms Fastigheter AB",
+    address: "Kungsgatan 45, 111 22 Stockholm",
+    phone: "08-123 45 67",
+    email: "info@stockholmsfastigheter.se",
+    createdAt: new Date("2023-01-15"),
+  },
+  {
+    id: "2",
+    name: "Göteborg Bostäder",
+    address: "Avenyn 12, 411 35 Göteborg",
+    phone: "031-987 65 43",
+    email: "kontakt@gbgbostader.se",
+    createdAt: new Date("2023-03-20"),
+  },
+  {
+    id: "3",
+    name: "Malmö Hyresfastigheter",
+    address: "Stortorget 8, 211 22 Malmö",
+    phone: "040-555 12 34",
+    email: "info@malmohyres.se",
+    createdAt: new Date("2023-02-10"),
+  },
+];
+
+export const mockApartments: Apartment[] = [
+  {
+    id: "1",
+    companyId: "1",
+    address: "Drottninggatan 15, 2tr",
+    rooms: 3,
+    area: 75,
+    rent: 15000,
+    leaseStart: new Date("2023-06-01"),
+    leaseEnd: new Date("2024-12-31"),
+    tenantName: "Anna Andersson",
+    tenantPhone: "070-123 45 67",
+  },
+  {
+    id: "2",
+    companyId: "1",
+    address: "Vasagatan 22, 4tr",
+    rooms: 2,
+    area: 55,
+    rent: 12000,
+    leaseStart: new Date("2023-08-01"),
+    leaseEnd: new Date("2024-11-30"), // Expires within 3 months
+    tenantName: "Erik Eriksson",
+    tenantPhone: "070-987 65 43",
+  },
+  {
+    id: "3",
+    companyId: "2",
+    address: "Järntorget 5, 1tr",
+    rooms: 4,
+    area: 95,
+    rent: 18000,
+    leaseStart: new Date("2023-04-01"),
+    leaseEnd: new Date("2025-03-31"),
+    tenantName: "Maria Svensson",
+    tenantPhone: "070-555 12 34",
+  },
+  {
+    id: "4",
+    companyId: "2",
+    address: "Linnégatan 33, 3tr",
+    rooms: 1,
+    area: 35,
+    rent: 8500,
+    leaseStart: new Date("2023-09-01"),
+    leaseEnd: new Date("2024-11-15"), // Expires within 3 months
+    tenantName: "Johan Johansson",
+    tenantPhone: "070-111 22 33",
+  },
+  {
+    id: "5",
+    companyId: "3",
+    address: "Södergatan 18, 5tr",
+    rooms: 2,
+    area: 60,
+    rent: 11000,
+    leaseStart: new Date("2023-07-01"),
+    leaseEnd: new Date("2024-12-15"),
+    tenantName: "Lisa Larsson",
+    tenantPhone: "070-444 55 66",
+  },
+];

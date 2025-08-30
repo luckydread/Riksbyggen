@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Riksbyggen.Tests/Riksbyggen.Tests.csproj" />
+  <Project Path="Riksbyggen/Riksbyggen.csproj" />
+  <Project Path="Riskbyggen.Tests/Riskbyggen.Tests.csproj" />
+</Solution>
