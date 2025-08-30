@@ -43,7 +43,7 @@ export function CreateApartmentDialog() {
     e.preventDefault();
 
     try {
-      await axios.post("https://localhost:7237/Apartment", formData, {
+      await axios.post("http://138.68.79.101:5000/Apartment", formData, {
         headers: { "Content-Type": "application/json" },
       });
 
