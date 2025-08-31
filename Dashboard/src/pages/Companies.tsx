@@ -12,7 +12,7 @@ export default function Companies() {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await axios.get("http://138.68.79.101:5000/api/Companies");
+        const response = await axios.get("http://138.68.79.101:5000/api/Companys");
         setCompanies(response.data);
       } catch (error) {
         console.error("Error fetching companies:", error);

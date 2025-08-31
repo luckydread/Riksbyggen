@@ -28,7 +28,7 @@ export function CreateCompanyDialog() {
 
     try {
       // Send form data to backend
-      const res = await axios.post("http://138.68.79.101:5000/api/Companies", formData, {
+      const res = await axios.post("http://138.68.79.101:5000/api/Companys", formData, {
         headers: {
           "Content-Type": "application/json",
         },

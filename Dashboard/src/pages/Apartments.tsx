@@ -36,7 +36,7 @@ export default function Apartments() {
     const fetchApartments = async () => {
       setLoading(true);
       try {
-        let url = `http://138.68.79.101:5000/api/Companies/${companyIdParam}/apartments`;
+        let url = `http://138.68.79.101:5000/api/Companys/${companyIdParam}/apartments`;
         const res = await axios.get(url);
         setApartments(res.data);
       } catch (err) {
