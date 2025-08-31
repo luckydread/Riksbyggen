@@ -27,19 +27,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     )
 );
 
-if (builder.Environment.IsDevelopment())
-{
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowVite", policy =>
         {
-            policy.WithOrigins("http://localhost:8080")
+            policy.WithOrigins("http://138.68.79.101:8080")
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
         });
     });
-}
+
 
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<IApartmentRepository, ApartmentRepository>();
@@ -51,12 +49,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
     app.UseCors("AllowVite");
-}
 
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseHttpsRedirection();
