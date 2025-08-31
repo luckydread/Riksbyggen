@@ -39,10 +39,7 @@ namespace Riksbyggen.Repositories
 
         public async Task<ApartmentDto> UpdateStatusAsync(int apartmentId, string newStatus)
         {
-            var apartment = await _context.Apartments.FindAsync(apartmentId);
-            if (apartment == null)
-                throw new KeyNotFoundException($"Apartment with ID {apartmentId} not found.");
-
+            var apartment = await _context.Apartments.FindAsync(apartmentId) ?? throw new KeyNotFoundException($"Apartment with ID {apartmentId} not found.");
             apartment.Status = newStatus;
             _context.Apartments.Update(apartment);
             await _context.SaveChangesAsync();

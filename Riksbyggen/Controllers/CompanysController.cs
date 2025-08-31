@@ -4,7 +4,7 @@ using Riksbyggen.Repositories.Interfaces;
 
 namespace Riksbyggen.Controllers
 {
-    [Route("api/Companies")]
+    [Route("api/[controller]")]
     [ApiController]
 
     public class CompanysController : ControllerBase
@@ -34,11 +34,7 @@ namespace Riksbyggen.Controllers
         public async Task<ActionResult<CompanyWithApartmentsDto>> CreateCompany([FromBody] CompanyCreateDto dto)
         {
             var createdCompany = await _repository.AddAsync(dto);
-
-            // Return 201 Created with link to company's apartments
-            return CreatedAtAction(nameof(GetApartmentsByCompany),
-                                   new { companyId = createdCompany.Id },
-                                   createdCompany);
+            return CreatedAtAction(nameof(GetApartmentsByCompany), new { companyId = createdCompany.Id },createdCompany);
         }
 
 

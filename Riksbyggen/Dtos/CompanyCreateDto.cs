@@ -1,4 +1,3 @@
-
 namespace Riksbyggen.Dtos
 {
     public class CompanyCreateDto
@@ -7,9 +6,5 @@ namespace Riksbyggen.Dtos
         public required string Street { get; set; }
         public required string City { get; set; }
         public required string ZipCode { get; set; }
-
     }
-
-
-
 }

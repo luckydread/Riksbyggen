@@ -16,7 +16,6 @@ var dbPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
 var connectionString = $"Data Source={dbHost};Initial Catalog={dbName};User Id=sa;Password={dbPassword};Encrypt=True;TrustServerCertificate=True;";
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString, sqlOptions =>
         sqlOptions.EnableRetryOnFailure(

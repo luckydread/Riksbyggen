@@ -22,7 +22,6 @@ namespace Riksbyggen.Controllers
         [HttpPost("status")]
         public async Task<IActionResult> UpdateStatus([FromBody] ApartmentStatusUpdateDto dto)
         {
-            // 🔑 Step 1: Validate secret (header or query param)
             var secret = _configuration["Webhook:Secret"];
             var requestSecret = Request.Headers["X-Webhook-Secret"].FirstOrDefault();
 
@@ -34,11 +33,9 @@ namespace Riksbyggen.Controllers
 
             try
             {
-                // 🔑 Step 2: Process the update
                 var updatedApartment = await _apartmentRepository.UpdateStatusAsync(dto.ApartmentId, dto.Status);
 
                 _logger.LogInformation("Webhook received for Apartment {Id} with Status {Status}", dto.ApartmentId, dto.Status);
-
 
                 return Ok(new { message = "Status updated successfully" });
             }

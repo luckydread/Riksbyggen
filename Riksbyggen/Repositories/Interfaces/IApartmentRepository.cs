@@ -5,7 +5,6 @@ namespace Riksbyggen.Repositories.Interfaces
     {
         Task<ApartmentDto> AddAsync(ApartmentCreateDto dto);
         Task<IEnumerable<ApartmentDto>> GetExpiringLeasesAsync(int companyId);
-
         Task<ApartmentDto> UpdateStatusAsync(int apartmentId, string newStatus);
     }
 }

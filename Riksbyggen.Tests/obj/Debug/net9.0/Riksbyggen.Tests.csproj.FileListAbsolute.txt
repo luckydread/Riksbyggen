@@ -161,3 +161,8 @@
 /home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/AutoMapper.dll
 /home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/DotEnv.dll
+/home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/DotNetEnv.dll
+/home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/Sprache.dll
+/home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/bin/Debug/net9.0/System.IO.Abstractions.dll
+/home/sinyoro/Documents/projects/Riksbyggen/Riksbyggen.Tests/obj/Debug/net9.0/Riksbyggen.Tests.sourcelink.json

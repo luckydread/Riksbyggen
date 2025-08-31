@@ -1,5 +1,3 @@
-using Riksbyggen.Models;
-
 namespace Riksbyggen.Dtos
 {
     public class ApartmentDto
