@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Riksbyggen.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80a7acfb3bb5fc36dda94bc3af3e801423b0a7eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c432ebe90b9dce52d722f58c543f69b9a2a93a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Riksbyggen.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Riksbyggen.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
