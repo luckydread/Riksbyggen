@@ -32,7 +32,6 @@ cd Riksbyggen
 dotnet ef database update
 
 # 2. Run .NET API
-cd Riksbyggen
 dotnet run
 
 # 3. Run React Frontend
