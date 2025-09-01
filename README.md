@@ -54,5 +54,5 @@ Example command for testing webhook to update apartment status:
 ```bash
 curl -X PUT http://138.68.79.101:5000/Apartment/1/status \
   -H "Content-Type: application/json" \
-  -H "X-Webhook-Secret: YOUR_WEBHOOK_SECRET" \
+  -H "X-Webhook-Secret: {xxxxx}" \
   -d '{"status":"Busy"}'
